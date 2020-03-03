@@ -39,6 +39,9 @@ h5,
 h6 {
   margin: 0;
 }
+blockquote {
+  margin: 0;
+}
 *,
 *:before,
 *:after {
@@ -228,6 +231,9 @@ h6 {
   font-size: 14px;
   color: #81868e;
 }
+.quotes__blue {
+  color: #19bd9a;
+}
 .works {
   padding-top: 78px;
 }
@@ -348,6 +354,10 @@ h6 {
   color: black;
   font-weight: 400;
 }
+.services__content {
+  font-size: 16px;
+  color: #333b46;
+}
 .services__skills {
   margin: auto;
   max-width: 550px;
@@ -378,4 +388,95 @@ h6 {
   font-size: 16px;
   color: #333b46;
   text-align: center;
+}
+.quotes {
+  padding-top: 78px;
+  padding-bottom: 50px;
+  background: url("../img/quotes-bg_02.jpg") center no-repeat;
+}
+.quotes__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.quotes__content {
+  max-width: 700px;
+  width: 100%;
+  color: #ffffff;
+}
+.quotes__title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.quotes__text {
+  margin-top: 50px;
+  font-size: 16px;
+}
+.quotes__name {
+  margin-top: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.quotes__position {
+  margin-top: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.portfolio {
+  padding-top: 75px;
+  color: #333b46;
+  text-align: center;
+}
+.portfolio__text {
+  margin-top: 30px;
+}
+.portfolio__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.portfolio__item {
+  width: 25%;
+  height: 350px;
+  margin: 20px;
+  position: relative;
+}
+.portfolio__item:hover .portfolio__content {
+  opacity: 1;
+}
+.portfolio__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.portfolio__content {
+  padding-left: 35px;
+  padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(18, 17, 16, 0.9);
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: opasity 0.2s linear;
+}
+.portfolio__subtitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.portfolio__subtext {
+  font-size: 12px;
 }

@@ -1,0 +1,82 @@
+// main: style.less
+.portfolio {
+    padding-top: 75px;
+    color: @black;
+    text-align: center;
+}
+
+.portfolio__title {
+
+}
+
+.portfolio__text {
+    margin-top: 30px;
+}
+
+.portfolio__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.portfolio__item {
+    width: 25%;
+    height: 350px;
+    margin: 20px;
+    position: relative;
+}
+
+.portfolio__item:hover .portfolio__content {
+    opacity: 1;
+}
+
+.portfolio__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.portfolio__content {
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    background-color: fade(#121110,90%);
+
+    color: @white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    transition: opasity .2s linear;
+}
+.portfolio__subtitle{
+    .title;
+}
+
+.portfolio__subtext {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
